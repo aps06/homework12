@@ -1,7 +1,7 @@
 from collections import UserDict
 from datetime import datetime
 from re import findall
-import pickle
+
 
 class Field:
     def __init__(self, value):
