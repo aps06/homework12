@@ -36,7 +36,7 @@ class Phone(Field):
 
 class Birthday(Field):
     def is_valid(self, value):
-        return 0 != len(findall(r"\b(?:0?[1-9]|[12]\d|3[01])[-/. ](?:0?[1-9]|1[0-2])[-/. ](?:19\d\d|20\d\d)\b|\b(?:19\d\d|20\d\d)[-/. ](?:0?[1-9]|1[0-2])[-/. ](?:0?[1-9]|[12]\d|3[01])\b", str(value)))
+        return 0 != len(findall(r"\b(?:0?[1-9]|[12]\d|3[01])[-/. ](?:0?[1-9]|1[0-2])[-/. ](?:\d\d\d\d)\b|\b(?:\d\d\d\d)[-/. ](?:0?[1-9]|1[0-2])[-/. ](?:0?[1-9]|[12]\d|3[01])\b", str(value)))
 
 
 class Record:
